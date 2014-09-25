@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jahvon</title>
+	<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="jquery-1.11.1.js"></script>
+
+	<style>
+		body {
+			background: #f5a9a9;
+			text-align: center;
+		}
+		h1 {
+			background: center;
+			color:green; 
+		
+		}
+		p {
+			color: maroon;
+			font-size:18px;
+		}
+
+		.calc {
+			border: 2px solid black;
+			margin-right: 350px;
+			margin-left: 350px;
+		}
+		input {
+			padding: 15px;
+			background-color: #FFFFFF;
+			color: maroon;
+		}
+	</style>
+</head>
+<body>
+	<h1>Jahvons website</h1>
+	<p>This is my website please come join my adventures.</p>
+	<h3>Jahvon's Amazing Calculator</h3>
+	<div class="calc">
+		<input type="text" id="firstNumber">
+		<label>And </label>
+		<input type="text" id="secondNumber">
+		<br></br>
+		<input type="submit" id="addButton" value="Add">
+		<input type="submit" id="subtractButton" value="Subtract">
+		<input type="submit" id="multiButton" value="Multipy">
+		<input  type="submit" id="divisonButton" value="Division">
+	</div>
+	<script type="text/javascript">
+
+		$("#addButton").click( function() {
+			var jahvonIsgrowing = document.getElementById("firstNumber").value;
+			var jahvonIsAdeadman = document.getElementById("secondNumber").value;
+			console.log(jahvonIsgrowing);
+			console.log(jahvonIsAdeadman)
+			var uno = parseInt(jahvonIsgrowing, 10);
+			var dos = parseInt(jahvonIsAdeadman, 10);
+			var sound = (uno + dos);  
+			$("body").append("<p>"+ "The answer to this problem is  " + sound+ " , but it doesnt matter because Im still the pokemon master!!" +"</p>");
+
+		});
+		$("#subtractButton").click( function() {
+			var jahvonIsgrowing = document.getElementById("firstNumber").value;
+			var jahvonIsAdeadman = document.getElementById("secondNumber").value;
+			var uno = parseInt(jahvonIsgrowing, 1);
+			var dos = parseInt(jahvonIsAdeadman, 1);
+			var sound = (uno - dos);  
+			$("body").append("<p>"+ "The answer to this problem is  " + sound+ " , but it doesnt matter because i still own you and your family" +"</p>");
+
+		});
+		$("#multiButton").click( function() {
+			var jahvonIsgrowing = document.getElementById("firstNumber").value;
+			var jahvonIsAdeadman = document.getElementById("secondNumber").value;
+			var uno = parseInt(jahvonIsgrowing, 10);
+			var dos = parseInt(jahvonIsAdeadman, 10);
+			var sound = (uno * dos);  
+			$("body").append("<p>"+ "The answer to this problem is  " + sound+ " , but it doesnt matter because you still need help to do simple math" +"</p>");
+
+		});
+
+		$("#divisonButton").click( function() {
+			var jahvonIsgrowing = document.getElementById("firstNumber").value;
+			var jahvonIsAdeadman = document.getElementById("secondNumber").value;
+			var uno = parseInt(jahvonIsgrowing, 10);
+			var dos = parseInt(jahvonIsAdeadman, 10);
+			var sound = (uno/dos);  
+			$("body").append("<p>"+"The answer to this problem is  " + sound + " , but it doesnt matter because I im the ruller of all the people who cant divide!!" +"</p>");
+
+		});
+
+</script>
+</body>
+</html>
